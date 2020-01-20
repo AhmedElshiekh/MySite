@@ -1,0 +1,290 @@
+html, body, .page {
+  position: fixed;
+  width: 100%   !important ;
+  height: 100%  !important ;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  font-family: Ubuntu, sans-serif;
+  -moz-transition: all .6s cubic-bezier(.5, .2, 2, 1.1);
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
+  color: #fff;
+  overflow-x: hidden !important ;    
+  cursor:url('../img/cursor.png'), auto;
+}
+#p1 {
+  left: 0;
+}
+#p2, #p3, #p4, #p5,#p6 {
+  left: 200%;
+}
+#p1 { background: rgb(38, 52, 66); cursor:url('../img/wcursor.png'), auto;}
+#p2 { background: seagreen   ; }
+#p3 { background: cornflowerblue; }
+#p4 { background: darkorchid ; }
+#p5 { background: #cccc33 ; }
+#p6 { background: tomato; }
+
+#t2:target #p2,
+#t3:target #p3,
+#t4:target #p4,
+#t5:target #p5,
+#t6:target #p6 {
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transform: translateX(-190%);
+  transition-delay: .9s !important;
+}
+#t2:target #p1,
+#t3:target #p1,
+#t4:target #p1,
+#t5:target #p1,
+#t6:target #p1{
+  background: black;
+}
+#t2:target #p1 .icon,
+#t3:target #p1 .icon,
+#t4:target #p1 .icon,
+#t5:target #p1 .icon,
+#t6:target #p1 .icon{
+  -webkit-filter: blur(3px) ;
+  -moz-filter: blur(3px) ;
+  -o-filter: blur(3px) ;
+  filter: blur(3px) !important;
+}
+
+.icon {
+  color: #fff;
+  font-size: 200%;
+  display: block;
+}
+
+ul .icon:hover {
+  transform: rotate(350deg);
+}
+
+.page .icon .title ,
+.page .skill .title {
+  line-height: 3;
+}
+
+#t2:target #dos,
+#t3:target #cer,
+#t4:target #tres,
+#t5:target #cuatro,
+#t6:target #cinco {
+  -webkit-transform: scale(1.2) ;
+  -moz-transform: scale(1.2) ;
+  -o-transform: scale(1.2) ;
+  transform: scale(1.2) !important;
+  font-size: xx-large;
+}
+
+ul {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 60%;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+  cursor:url('../img/wcursor.png'), auto;
+}
+
+#menu .icon {
+  margin: 25% auto ;
+  opacity: 0.8;
+  font-size:x-large;
+  -webkit-transition: all .5s ease-out ;
+  -moz-transition: all .5s ease-out ;
+  -o-transition: all .5s ease-out ;
+  transition: all .5s ease-out !important;
+}
+.skill, .title, .hint {
+  display: block;
+}
+
+.title {
+  font-size: 4.5vh;
+}
+.hint {
+  font-size: 2.4vh;
+  /* text-shadow: 10px 10px 20px black; */
+}.hit{line-height: 6vh;}
+
+ a{
+  color:#fff;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  font-size: 4.3vh;
+  cursor:url('../img/select.png'), auto;
+} a:hover {color: black;text-decoration: none;}
+.page .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 90%;
+  height: 50%;
+  line-height: 1.3;
+  margin: auto;
+  text-align: center;
+  transform: translateX(360%);
+  transition: all .8s cubic-bezier(.25, 1, .5, 1.25);
+}
+.page .skill{
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  height: 50%;
+  transform: translateX(360%);
+  transition: all .8s cubic-bezier(.27,.67,.37, 1.091);
+}
+.page#p1 .icon ,
+.page#p1 .skill {
+  height: 50%;
+  -webkit-transform: translateX(10%) ;
+  -moz-transform: translateX(10%) ;
+  -o-transform: translateX(10%) ;
+  transform: translateX(10%) !important;
+}
+
+#t2:target .page#p2 .skill,
+#t3:target .page#p3 .skill,
+#t4:target .page#p4 .skill,
+#t5:target .page#p5 .skill,
+#t6:target .page#p6 .icon {
+  -webkit-transform: translateX(0) ;
+  -moz-transform: translateX(0) ;
+  -o-transform: translateX(0) ;
+  transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+
+/************* circle skills *************/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+.circle-wrap {
+  margin: 30px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+  -webkit-transition: width height .3s; /* For Safari 3.1 to 6.0 */
+  transition: width height .3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;  
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 74px);
+}
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill  {
+  -webkit-animation: fill ease-in-out 6s;
+  -moz-animation: fill ease-in-out 6s;
+  -o-animation:fill ease-in-out 6s;
+  animation: fill ease-in-out 6s; 
+} 
+.p90 .circle .mask.full,
+.p90 .circle .fill {
+  transform: rotate(130deg);
+  background-color: rgb(66, 66, 66); 
+} 
+.p70 .circle .mask.full,
+.p70 .circle .fill {
+  transform: rotate(70deg); 
+  background-color: rgb(0, 119, 255); 
+} 
+.p60 .circle .mask.full,
+.p60 .circle .fill {
+  transform: rotate(40deg);
+  background-color: rgb(1, 182, 1); 
+} 
+.p50 .circle .mask.full,
+.p50 .circle .fill {
+  transform: rotate(-2deg);
+  background-color: yellow; 
+} 
+.p30 .circle .fill {
+  transform: rotate(93deg);
+  background-color: red;    
+} 
+@keyframes fill {
+  0%   {background: red; transform: rotate(93deg);}
+  25%  {background: yellow; transform: rotate(-2deg)}
+  50%  {background: rgb(1, 182, 1); transform: rotate(40deg)}
+  75%  {background: rgb(0, 119, 255); transform: rotate(70deg)}
+  100% {background: rgb(66, 66, 66);transform: rotate(172deg);}
+} 
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: seagreen ;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+} 
+/*********** end circle skills ************/
+
+/* portfolio pic */
+.photo-me{
+  border: 1px ;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+  transform: width .3s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.photo-me:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  width: 155px;
+}/* end portfolio pic */
+.img1{ 
+  border: .5px ;
+  border-radius: 6%;
+  padding: 3px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img2{width: 80%;height: 80%;}
+.img3{ 
+  position: sticky;
+  border: .5px ;
+  border-radius: 1%;
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.proj{ 
+  border-radius: 3%;
+  padding: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+

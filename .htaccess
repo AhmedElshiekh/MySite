@@ -1,0 +1,20 @@
+RewriteEngine on
+
+#hide directory
+ErrorDocument 404 /Erorr
+RewriteRule ^inc/?$  Erorr
+RewriteRule ^img/?$  Erorr
+RewriteRule ^css/?$  Erorr
+RewriteRule ^js/?$  Erorr
+
+
+RewriteRule ^Home  inc/p1.php
+RewriteRule ^Skill?$  inc/p2.php
+RewriteRule ^Cert?$  inc/p3.php
+RewriteRule ^Project?$  inc/p4.php
+RewriteRule ^Gallery?$  inc/p5.php
+RewriteRule ^Contact?$  inc/p6.php
+RewriteRule ^welcome?$  nc.php
+RewriteRule ^Erorr?$  404.php
+
+
