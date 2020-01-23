@@ -11,7 +11,7 @@
                 <a href="https://www.linkedin.com/in/ahmed-elsheikh-98a577119/" target="_blank"  title="Linkedin"><i class="fab fa-linkedin"></i> </a>
                 <a href="https://github.com/AhmedElshiekh" target="_blank"  title="Github"><i class="fab fa-github"></i> </a>
                 <a href="https://stackoverflow.com/users/11905195" target="_blank"  title="StackOverFlow"><i class="fab fa-stack-overflow"></i> </a>
-                <a href="https://twitter.com/ahmed_elsh50" target="_blank"  title="Twitter"><i class="fab fa-twitter"></i> </a>
+                <a href="https://twitter.com/A7m6dElshiekh" target="_blank"  title="Twitter"><i class="fab fa-twitter"></i> </a>
                 <a href="https://www.instagram.com/ahmed.el.shikh/" target="_blank"  title="instagram"><i class="fab fa-instagram"></i> </a>
                 <!-- <a href="" target="_blank"  title="copy whats num"><i class="fa"></i> </a> -->
                 <!-- <a onclick="copyToClipboard('#oo')" title="copy whats num"><i class="fab fa-whatsapp"> </i></a> -->
